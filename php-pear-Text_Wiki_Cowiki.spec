@@ -4,6 +4,7 @@
 %define		_status		alpha
 %define		_pearname	Text_Wiki_Cowiki
 Summary:	%{_pearname} - Cowiki parser and renderer for Text_Wiki
+Summary(pl.UTF-8):	%{_pearname} - analizator i renderer coWiki dla Text_Wiki
 Name:		php-pear-%{_pearname}
 Version:	0.0.2
 Release:	1
@@ -29,6 +30,18 @@ and also renders for wiki conversion.
 See: <http://cowiki.org/>
  
 In PEAR status of this package is: %{_status}.
+
+%description -l pl.UTF-8
+Uwaga: coWiki oficjalnie przestało być utrzymywane. Ten pakiet został
+zachowany w celu konwersji ze składni coWiki do znaczników innych
+wiki.
+
+Ta klasa analizuje znaczniki coWiki w celu utworzenia tokenów tekstu
+do renderowania Text_Wiki oraz konwersji wiki.
+
+Więcej pod adresem <http://cowiki.org/>.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %pear_package_setup
